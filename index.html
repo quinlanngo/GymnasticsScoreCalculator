@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymnastics Routine Score Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Mens Gymnastics Start Value Calculator</h1>
+
+  <!-- Event selection dropdown and button -->
+  <div id="eventselect">
+      <label for="event-select">Select Event:</label>
+      <select id="event-select">
+          <option value="floor">Floor</option>
+          <option value="pommels">Pommel Horse</option>
+          <option value="rings">Rings</option>
+          <option value="vault">Vault</option>
+          <option value="pbars">Parallel Bars</option>
+          <option value="hbar">Horizontal Bar</option>
+      </select>
+      <button id="select-event-button">Select Event</button>
+  </div>
+
+  <!-- Autocomplete input fields -->
+  <div id="inputs-container" class="autocomplete">
+    <div>
+      <input id="skill1-input" type="text" placeholder="Enter skill name">
+      <span id="skill1-value" class="skill-info"></span>
+      <span id="skill1-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill2-input" type="text" >
+      <span id="skill2-value" class="skill-info"></span>
+      <span id="skill2-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill3-input" type="text" >
+      <span id="skill3-value" class="skill-info"></span>
+      <span id="skill3-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill4-input" type="text" >
+      <span id="skill4-value" class="skill-info"></span>
+      <span id="skill4-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill5-input" type="text" >
+      <span id="skill5-value" class="skill-info"></span>
+      <span id="skill5-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill6-input" type="text">
+      <span id="skill6-value" class="skill-info"></span>
+      <span id="skill6-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill7-input" type="text" >
+      <span id="skill7-value" class="skill-info"></span>
+      <span id="skill7-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill8-input" type="text">
+      <span id="skill8-value" class="skill-info"></span>
+      <span id="skill8-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill9-input" type="text">
+      <span id="skill9-value" class="skill-info"></span>
+      <span id="skill9-group" class="skill-info"></span>
+    </div>
+    <div>
+      <input id="skill10-input" type="text">
+      <span id="skill10-value" class="skill-info"></span>
+      <span id="skill10-group" class="skill-info"></span>
+    </div>
+  </div>
+  
+  <button onclick="calculateScore()">Calculate Score</button>
+  <div id="skills-summary"></div>
+  <p>Start Value: <span id="total-value"></span></p>
+
+  <script src="main.js"></script>
+  
+</body>
+</html>
